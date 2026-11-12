@@ -8,18 +8,34 @@
     <style>
         body{
             background-color: black;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
         }
+
         h1{
             color: white;
+            grid-column: 2;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        div {
+            grid-column: 2;
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
         }
     </style>
 </head>
 <body>
     <h1>Vídeos Legais Para Assistir</h1>
-    <a href="paginas/primeiro-video.html" target="_self" rel="next"><img width="250px" src="imagens/primeiro-video.jpg" alt="7mz Rudo"></a>
-    <a href="paginas/segundo-video.html" target="_self" rel="next"><img width="250px" src="imagens/segundo-video.jpg" alt="Anirap Tribunal"></a>
-    <br>
-    <a href="paginas/terceiro-video.html" target="_self" rel="next"><img width="250px" src="imagens/terceiro-video.jpg" alt="Chrono Cemitério"></a>
-    <a href="paginas/quarto-video.html" target="_self" rel="next"><img width="250px" src="imagens/quarto-video.jpg" alt="Souzones Codenames"></a>
+    <div>
+        <a href="paginas/primeiro-video.html" target="_self" rel="next"><img width="250px" src="imagens/primeiro-video.jpg" alt="7mz Rudo"></a>
+        <a href="paginas/segundo-video.html" target="_self" rel="next"><img width="250px" src="imagens/segundo-video.jpg" alt="Anirap Tribunal"></a>
+    </div>
+    <div>
+        <a href="paginas/terceiro-video.html" target="_self" rel="next"><img width="250px" src="imagens/terceiro-video.jpg" alt="Chrono Cemitério"></a>
+        <a href="paginas/quarto-video.html" target="_self" rel="next"><img width="250px" src="imagens/quarto-video.jpg" alt="Souzones Codenames"></a>
+    </div>
 </body>
 </html>
